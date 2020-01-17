@@ -1,0 +1,17 @@
+.main-container {
+    border: 2px solid orangered;
+    height: 100%  
+}
+main {
+    Height: auto;
+    width: 100%;
+    display: grid;
+}
+header {
+   border: 20px solid blue  
+}
+nav {
+    border: 25px solid grey;
+    background: transparent;
+   text-align: center;
+}
