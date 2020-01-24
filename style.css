@@ -12,7 +12,9 @@ body {
     height: 150px;
     margin: 3% 10%;
   }
- 
+  @media (min-width: 992px) {
+
+  }
   header {
     display: grid;
     grid-template-columns: 40% 60%;

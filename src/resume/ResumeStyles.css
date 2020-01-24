@@ -1,0 +1,17 @@
+header {
+text-align: center;
+}
+section.occupation {
+    text-align: center;
+    color: grey;
+}
+#headshot {
+    width: 200px;
+    height: 250px;
+    border-radius: 40%;
+    margin: 10%;
+    grid-column: 2/3;
+}
+body {
+background-image: url(resume_background.jpg);
+}
