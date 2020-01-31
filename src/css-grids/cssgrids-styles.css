@@ -37,7 +37,7 @@ table {
     grid-template-columns: 50% 50%;
 }
 .date {
-background: orange;
+background: 
 grid-column: 1;
 grid-row: 2/3;
 font-size: 15px;
@@ -203,4 +203,10 @@ grid-row: 3;
   
   .addBtn:hover {
     background-color: #bbb;
+  }
+
+  .date {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
