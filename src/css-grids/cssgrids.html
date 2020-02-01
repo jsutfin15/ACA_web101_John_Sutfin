@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Grids Dashboard</title>
+    <script> 
+        function dis(val) 
+        { 
+            document.getElementById("result").value+=val 
+        } 
+           
+        function solve() 
+        { 
+            let x = document.getElementById("result").value 
+            let y = eval(x) 
+            document.getElementById("result").value = y 
+        } 
+          
+        function clr() 
+        { 
+            document.getElementById("result").value = "" 
+        } 
+     </script> 
+    <link rel="stylesheet" href="cssgrids-styles.css">
+</head>
+<body>
+    <main class="main-container">
+        <div class="box-a"></div>  
+        <div class="greeting">
+            <h1>HELLO! WELCOME TO MY DASHBOARD</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum a doloribus, odio ea, velit, iusto molestiae cumque minima eius unde quidem nobis. Assumenda, veniam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores fugit cum incidunt distinctio. Labore, commodi. Quia, laborum expedita dolores libero qui corporis obcaecati placeat vitae, ad pariatur beatae, natus id. Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis fugiat ipsam ducimus reprehenderit aliquid suscipit placeat excepturi, at perspiciatis, perferendis dolorum! Omnis, impedit delectus voluptatem debitis dolore qui suscipit eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut provident tempore nam id optio velit numquam quisquam sapiente minus voluptatibus voluptatem totam animi corporis, eos adipisci est, pariatur, repudiandae asperiores.</p>
+        </div>
+        <div class="Calculator" ></div> 
+          <table border="1"> 
+             <tr> 
+                <td colspan="3"><input type="text" id="result"/></td> 
+                <td><input type="button" value="c" onclick="clr()"/> </td> 
+             </tr> 
+             <tr> 
+                <td><input type="button" value="1" onclick="dis('1')"/> </td> 
+                <td><input type="button" value="2" onclick="dis('2')"/> </td> 
+                <td><input type="button" value="3" onclick="dis('3')"/> </td> 
+                <td><input type="button" value="/" onclick="dis('/')"/> </td> 
+             </tr> 
+             <tr> 
+                <td><input type="button" value="4" onclick="dis('4')"/> </td> 
+                <td><input type="button" value="5" onclick="dis('5')"/> </td> 
+                <td><input type="button" value="6" onclick="dis('6')"/> </td> 
+                <td><input type="button" value="-" onclick="dis('-')"/> </td> 
+             </tr> 
+             <tr> 
+                <td><input type="button" value="7" onclick="dis('7')"/> </td> 
+                <td><input type="button" value="8" onclick="dis('8')"/> </td> 
+                <td><input type="button" value="9" onclick="dis('9')"/> </td> 
+                <td><input type="button" value="+" onclick="dis('+')"/> </td> 
+             </tr> 
+             <tr> 
+                <td><input type="button" value="." onclick="dis('.')"/> </td> 
+                <td><input type="button" value="0" onclick="dis('0')"/> </td> 
+                <td><input type="button" value="=" onclick="solve()"/> </td> 
+                <td><input type="button" value="*" onclick="dis('*')"/> </td> 
+             </tr> 
+          </table> 
+        <div class="box-b"></div>
+            <div class="date">
+                <h1>1/30/2020</h1>
+            </div>
+            <div class="analog-clock">
+                <svg width="140" height="140">
+                    <circle id="clock-face" cx="70" cy="70" r="65" />
+                    <line id="h-hand" x1="70" y1="70" x2="70" y2="38" />
+                    <line id="m-hand" x1="70" y1="70" x2="70" y2="20" />
+                    <line id="s-hand" x1="70" y1="70" x2="70" y2="12" />
+                    <line id="s-tail" x1="70" y1="70" x2="70" y2="56" />
+                    <text x="62" y="18">12</text>
+                    <text x="126" y="76">3</text>
+                    <text x="66" y="130">6</text>
+                    <text x="7" y="76">9</text>
+                </svg>
+                
+            </div>
+        <div id="myDIV" class="header"></div>
+          <ul id="myUL">
+            <li>Hit the gym</li>
+            <li class="checked">CODE</li>
+            <li>Meet Randy</li>
+            <li>Buy milk</li>
+            <li>Read a book</li>
+            <li>Pay bills</li>
+          </ul>
+        <div class="left-side"></div>
+    </main>
+
+</body>
+</html>
