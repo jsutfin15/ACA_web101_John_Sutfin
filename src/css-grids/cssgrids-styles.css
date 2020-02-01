@@ -1,9 +1,9 @@
 main.main-container {
     background-image: url(Dashboard-background.jpg) ;
-    background-size: 160%;
-    border: 1px solid black;
-    height: 750px;
-    width: 750px;
+    background-size: 100%;
+    border: none;
+    height: auto;
+    width: auto;
     display: grid;
     grid-template-columns: 15% 5% 40% 40%;
     grid-template-rows: 30% 20% 35% 15%;
@@ -12,15 +12,16 @@ main.main-container {
 
 .box-a {
     border: 1px solid black;
-    background: red;
+    background: ;
     grid-column: 1;
     grid-row: 1/2;
 }
 .greeting {
-background:powderblue;
+background:none;
 grid-column: 3/5;
 grid-row: 1;
 text-align: center;
+
 
 }
 
@@ -30,6 +31,7 @@ table {
     grid-row: 2; 
     height: auto;
     width: auto;
+    
 }
 
 .box-b {
@@ -37,7 +39,7 @@ table {
     grid-template-columns: 50% 50%;
 }
 .date {
-background: 
+background: none;
 grid-column: 1;
 grid-row: 2/3;
 font-size: 15px;
@@ -45,26 +47,28 @@ text-align: center;
 }
 
 .analog-clock{
-    grid-column: 3/5;
-    grid-row: 2;
-    box-align: center;
+  width:140px;
+  height:140px;
+  grid-column: 3/5;
+  grid-row: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 *{
-    margin:0;
+    margin:5px;
     padding:0;
     font-family:sans-serif;
     font-size:14px;
+    
 }
 
-.analog-clock{
-    width:140px;
-    height:140px;
-}
 
 #clock-face{
     stroke:black;
     stroke-width:2px;
     fill:white;
+    
 }
 
 #h-hand, #m-hand, #s-hand, #s-tail{
@@ -90,12 +94,8 @@ background: cyan;
 grid-column: 3;
 grid-row: 3;
 }
-/* Include the padding and border in an element's total width and height */
-* {
-    box-sizing: border-box;
-  }
-  
-  /* Remove margins and padding from the list */
+
+
   ul {
     margin: 0;
     padding: 0;
@@ -163,7 +163,7 @@ grid-row: 3;
   
   /* Style the header */
   .header {
-    background-color: #f44336;
+    background-color: none;
     padding: 30px 40px;
     color: white;
     text-align: center;
@@ -209,4 +209,4 @@ grid-row: 3;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+  
